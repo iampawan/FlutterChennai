@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutterchennaivs/instagram/instagram_page.dart';
 
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     title: "Flutter Chennai",
-    theme: ThemeData(
-      primarySwatch: Colors.blue,
-    ),
-    home: HomePage(),
+    theme: new ThemeData(
+        primarySwatch: Colors.blue,
+        primaryColor: Colors.black,
+        primaryIconTheme: IconThemeData(color: Colors.black),
+        primaryTextTheme: TextTheme(
+            title: TextStyle(color: Colors.black, fontFamily: "Aveny")),
+        textTheme: TextTheme(title: TextStyle(color: Colors.black))),
+    home: InstaPage(),
   ));
 }
 
